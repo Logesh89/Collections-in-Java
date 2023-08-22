@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+
+        ArrayList<Integer> arr = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            int num = scanner.nextInt();
+            arr.add(num);
+        }
+
+        LinkedHashSet<Integer> linkedSet = new LinkedHashSet<>(arr);
+        ArrayList<Integer> orgList = new ArrayList<>(linkedSet);
+
+        System.out.println("Original list with duplicates removed: " + orgList);
+
+        scanner.close();
+    }
+}
+
+
+
+/*  output:
+Enter the number of elements: 5
+1 2 2 4 5
+Original list with duplicates removed: [1, 2, 4, 5]  */
