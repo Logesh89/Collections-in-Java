@@ -1,4 +1,4 @@
-# Collections-in-Java
+# Collections-in-Java //Hard work never fails
 
 Collection: This is the root interface of the collection hierarchy. It defines the basic methods that all collections will have, such as add, remove, and contains.
 
